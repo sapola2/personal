@@ -17,7 +17,7 @@ end
 while getgenv().Enabled do
     task.wait()
 for i,v in pairs(glass:GetChildren()) do
-	if v:IsA("Model") and v.Name == "ExteriorCam" then
+	local cam = v.ExteriorCam
 	local outline = Instance.new("Highlight")
 	outline.Name = v.Name
 	outline.FillTransparency = Filltransparency
