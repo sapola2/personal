@@ -19,6 +19,7 @@ while getgenv().Enabled do
 for i,v in pairs(glass:GetChildren()) do
 	local cam = v.ExteriorCam
 	local outline = Instance.new("Highlight")
+        outline.Parent = folder
 	outline.Name = v.Name
 	outline.FillTransparency = Filltransparency
 	outline.FillColor = Fillcolor
