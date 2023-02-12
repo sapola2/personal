@@ -21,7 +21,7 @@ end
 while getgenv().enabled do
     task.wait()
     for i, v in pairs(game:GetService("Workspace").Level.Glass:GetChildren()) do
-        local esp = holder:FindFirstChild(v.Name) or Instance.new("Highlight")
+        local esp = folder:FindFirstChild(v.Name) or Instance.new("Highlight")
         esp.Name = v.Name
         esp.Parent = folder
         esp.FillColor = fillcolor 
